@@ -1,8 +1,6 @@
 import React from 'react';
-import { isValidString } from '../../../utils/validation';
 import styles from './style.module.scss';
 
-const DEFAULT_WORD_LIMIT = 120;
 
 export default function Input({
   label, type = 'text', error, setValue,
