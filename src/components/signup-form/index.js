@@ -15,12 +15,6 @@ export default function SignupForm() {
     return regex.test(password);
   };
 
-  
-  async function handleUserSignup() {
-    console.log('Sign up handled!');
-    
-  }
-
   return (
     <div className={styles.container}>
       <div className={styles.headerContainer}>
@@ -29,7 +23,7 @@ export default function SignupForm() {
           Please fill up this form with your credentials
         </div>
       </div>
-      <Input.WithValidation
+      <Input
         label='Email'
         setValue={setEmail}
         error={
@@ -38,7 +32,7 @@ export default function SignupForm() {
             : ''
         }
       />
-      <Input.WithValidation
+      <Input
         label='Password'
         type='password'
         setValue={setPassword}
@@ -48,24 +42,27 @@ export default function SignupForm() {
             : ''
         }
       />
-      <Input.WithValidation
+      <Input
         label='Confirm Password'
         type='password'
         setValue={setConfirmPassword}
         error={
-          password && confirmPassword && password != confirmPassword
+          password && confirmPassword && password !== confirmPassword
             ? 'Password did not match!'
             : ''
         }
       />
-      
-
-    
-
       <div className={styles.alternateInfo}>
         <p>Already have an account?</p>
-          <a>Sign In</a>
+          <a href="/" >Sign In</a>
       </div>
     </div>
   );
 }
+
+
+SignupForm.BrandInfo = () => (
+  <div className={styles.container}>
+    <p>Branding</p>
+  </div>
+);
