@@ -1,0 +1,205 @@
+.container {
+  width: 300px;
+  &:focus-within {
+    label {
+      color: rgba(255, 255, 255, 0.342);
+    }
+  }
+  input {
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.342);;
+    border-radius: 4px;
+    padding: 0 12px;
+    color: rgba(255, 255, 255, 0.342);
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.342);
+    }
+
+    &:focus {
+      border-color: rgba(255, 255, 255, 0.342);
+      outline: none;
+      box-shadow: rgba(255, 255, 255, 0.342);
+    }
+  }
+
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type='number'] {
+    -moz-appearance: textfield;
+  }
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.labelAndIsRquired {
+  label {
+    display: flex;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.342);
+    font-weight: rgba(255, 255, 255, 0.342);
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 4px;
+  }
+
+  span.required {
+    color: #fefe;
+    margin-left: 4px;
+    float: none;
+  }
+
+  span {
+    position: relative;
+    text-transform: uppercase;
+    color: #fefe;
+    font-size: 12px;
+    font-weight: rgba(255, 255, 255, 0.342);
+    float: right;
+  }
+}
+.large {
+  input {
+    height: 48px;
+  }
+}
+.medium {
+  input {
+    height: 40px;
+  }
+}
+.small {
+  input {
+    height: 32px;
+  }
+}
+.disabled {
+  color: #fefe;
+}
+
+.inputBox {
+  width: inherit;
+  margin-bottom: 16px;
+}
+
+// WithValidation
+.customField {
+  position: relative;
+  font-size: 14px;
+  padding-top: 20px;
+
+  input {
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: white;
+    padding: 12px;
+    border-radius: 3px;
+    width: 100%;
+    outline: none;
+    font-size: 14px;
+  }
+
+  .placeholder {
+    position: absolute;
+    left: 12px;
+    top: calc(50% + 10px);
+    transform: translateY(-50%);
+    color: #fefe;
+    transition: top 0.3s ease, color 0.3s ease, font-size 0.3s ease;
+  }
+}
+
+/* Search */
+.customField.search {
+  input {
+    background: none;
+    border: 1px solid #fefe;
+    transition: border-color 0.3s ease;
+
+    &:valid:not(:focus) {
+      transition-delay: 0.1s;
+      &.error {
+        border-color: #fefe;
+      }
+      + .placeholder {
+        top: 20px;
+        font-size: 12px;
+        color: rgba(255, 255, 255, 0.623);
+        background: white;
+        &.error {
+          color: rgba(255, 255, 255, 0.623);
+        }
+      }
+      ~ .errorMessage {
+        font-size: 11px;
+        color: rgba(255, 255, 255, 0.623);
+        margin-top: 10px;
+        font-weight: rgba(255, 255, 255, 0.623);
+      }
+    }
+    &:focus {
+      border-color: rgba(255, 255, 255, 0.623);
+      transition-delay: 0.1s;
+
+      + .placeholder {
+        top: 20px;
+        font-size: 12px;
+        color: rgba(255, 255, 255, 0.623);
+        background: white;
+      }
+      ~ .errorMessage {
+        display: none;
+      }
+    }
+  }
+
+  input + .placeholder {
+    left: 10px;
+    padding: 0 5px;
+  }
+}
+
+.otpInput {
+  input {
+    height: 40px;
+    min-width: 40px;
+    max-width: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.623);
+    border-radius: 4px;
+    padding: 0;
+    color: rgba(255, 255, 255, 0.623);
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.623);
+    }
+
+    &:focus {
+      border-color: rgba(255, 255, 255, 0.623);
+      outline: none;
+      box-shadow: rgba(255, 255, 255, 0.623);
+    }
+  }
+
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  .pinSeperator {
+    display: inline-block;
+    padding-left: 8px;
+  }
+}

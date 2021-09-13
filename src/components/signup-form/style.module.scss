@@ -1,0 +1,123 @@
+.container {
+  height: 586px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: none;
+}
+
+.mainHeaderText {
+  font-size: 30px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 41px;
+  text-transform: uppercase;
+  color: #fefe;
+  flex: none;
+  margin-bottom: 8px;
+}
+
+.subHeaderText {
+  color: #fefe;
+  font-size: 13px;
+  line-height: 16px;
+  flex: none;
+  margin-bottom: 10px;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-top: 10px;
+}
+
+.buttonGroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.buttonSignup {
+  height: 45px;
+  margin-top: 20px;
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.buttonADFS {
+  height: 45px;
+  background: white !important;
+  border: 1px solid rgba(238, 238, 238, 0.664) !important;
+  margin-top: 20px;
+  color: rgba(238, 238, 238, 0.664) !important;
+}
+
+.horizontalLine {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid rgba(238, 238, 238, 0.664);
+  line-height: 0.1em;
+  margin: 20px 0px 0px;
+}
+
+.horizontalLine span {
+  background: white;
+  color: rgba(238, 238, 238, 0.664);
+  padding: 0 10px;
+}
+
+.buttonItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    margin-left: 15px;
+    margin-bottom: 0px;
+  }
+}
+
+.alternateInfo {
+  display: flex;
+  align-self: center;
+  margin-top: 10px;
+  p {
+    margin-right: 5px;
+  }
+}
+
+.sharedCode {
+  position: relative;
+  margin-top: 20px;
+  border-top: 1px solid rgba(238, 238, 238, 0.664);
+  height: auto;
+  width: inherit;
+  display: inherit;
+  flex-direction: inherit;
+  cursor: text;
+}
+
+.errorBox {
+  border: 1px solid rgba(rgba(238, 238, 238, 0.664), 0.25);
+  border-radius: 4px;
+  background-color: rgba(rgba(238, 238, 238, 0.664), 0.1);
+  color: rgba(255, 255, 255, 0.623);
+  font-size: 13px;
+  padding: 12px;
+  margin-top: 16px;
+  text-align: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
