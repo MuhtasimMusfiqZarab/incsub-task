@@ -1,4 +1,14 @@
 
 .container{
   display: flex;
+  justify-content: center;
+  align-items: center;
+  .signupContainer{
+   flex:1;
+   height: 100vh;
+  }
+  .brand{
+    flex:1;
+    height: 100vh;
+  }
 }

@@ -1,8 +1,9 @@
 .container {
-  height: 586px;
-  width: 350px;
+  height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .headerContainer {
