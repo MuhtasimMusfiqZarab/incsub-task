@@ -12,7 +12,7 @@ export default function SignupForm() {
 
   //check for password length
   const checkPassword = (password) => {
-    return password.length >=8 ;
+    return password.length >= 8;
   };
 
   const onSubmitForm = (event) => {
@@ -74,7 +74,8 @@ export default function SignupForm() {
 
 
 SignupForm.BrandInfo = () => (
-  <div className={styles.container}>
-    <p>Branding</p>
+  <div className={styles.brandContainer}>
+    <p className={styles.heading}>Dummy Heading</p>
+    <p className={styles.subHeading} >Lorem ipsum dolor sit amet, consectetur adipisicing elit, Nobis dolorem ab eligendi explicabo nesciunt voluptates minima</p>
   </div>
 );

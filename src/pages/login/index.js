@@ -9,7 +9,7 @@ function Login() {
           <SignupForm />
         </div>
         <div className={styles.brand}>
-        <SignupForm.BrandInfo />
+          <SignupForm.BrandInfo />
         </div>
       </div>
   );

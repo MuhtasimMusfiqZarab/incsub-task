@@ -122,3 +122,25 @@
   -ms-user-select: none;
   user-select: none;
 }
+
+
+.brandContainer{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: #286ef9;
+  padding: 7rem;
+  line-height: 1.5rem;
+
+  .heading{
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-bottom: 4rem;
+  }
+  .subHeading{
+    font-size: .9rem;
+  }
+}
