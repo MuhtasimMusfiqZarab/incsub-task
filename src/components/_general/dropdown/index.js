@@ -47,11 +47,6 @@ export const Dropdown= ({
           className={`${styles.options_container} ${opened ? styles.active : ""
             }`}
         >
-          <div className={styles.option} onClick={() => resetFilter()}>
-            <input type="radio" name="category" />
-            <label> - </label>
-          </div>
-
           {options.length > 0
             ? options?.map((element, index) => {
               return (

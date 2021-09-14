@@ -2,16 +2,14 @@ import React, { useState } from 'react';
 import validator from 'validator';
 import  Input  from '../_general/input-box';
 import  {Dropdown}  from '../_general/dropdown';
+import { Button } from "../_general/button";
 import styles from './style.module.scss';
 
 export default function SignupForm() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [confirmPassword, setConfirmPassword] = useState('');
   
-
-  //check for password length
   const checkPassword = (password) => {
     return password.length >= 8;
   };
@@ -59,6 +57,7 @@ export default function SignupForm() {
               : ''
           }
         />
+        <Button>Next</Button>
         
         
     </form>

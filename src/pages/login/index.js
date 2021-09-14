@@ -1,6 +1,6 @@
-import  styles from './style.module.scss';
-// import {SigninIcon} from "../../components/_icons/signinIcon";
 import SignupForm from "../../components/signup-form";
+import  styles from './style.module.scss';
+
 
 function Login() {
   return (
