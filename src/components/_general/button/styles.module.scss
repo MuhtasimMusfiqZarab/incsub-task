@@ -1,18 +1,20 @@
-$os-secondary: #5d8aa8;
-$os-primary: #03396c;
+$incsub-primary: #03396c;
+$text-color:#c7ccdb;
+$white: #fff;
+$btn-background: #ededed;
 
 .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: #c7ccdb;
+  color: $text-color;
   font-size: .9rem;
   font-weight: 700;
   line-height: 1;
   border: none;
   border-radius: 5px;
-  background: #ededed;
-  padding: 19px 33px;
+  background: $btn-background;
+  padding: 1.18rem 2.06rem;
   cursor: pointer;
   white-space: nowrap;
   transition: all 0.25s;
@@ -21,18 +23,7 @@ $os-primary: #03396c;
   margin-top: 1.25rem;
 
   &:hover {
-    color: #fff;
-    background: #286ef9;
-  }
-
-  &_fill_primary {
-    background: $os-primary;
-    border-color: $os-primary;
-    color: #fff;
-
-    &:hover {
-      background: $os-secondary;
-      border-color: $os-secondary;
-    }
+    color: $white;
+    background: $incsub-primary;
   }
 }

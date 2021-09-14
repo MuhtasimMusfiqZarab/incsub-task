@@ -2,10 +2,8 @@ import React, { useState, useRef, useEffect } from "react";
 import styles from "./styles.module.scss";
 
 export const Dropdown= ({
-  title,
   items,
   setItem,
-  isInline,
 })  => {
   const initialValue = "I would describe my user type as";
   const dropWrap = useRef(null);
@@ -41,7 +39,6 @@ export const Dropdown= ({
 
   return (
     <div className={`${styles.container}`}>
-      <div className={styles.title}>{title}</div>
       <div className={styles.select_box} ref={dropWrap}>
         <div
           className={`${styles.options_container} ${opened ? styles.active : ""

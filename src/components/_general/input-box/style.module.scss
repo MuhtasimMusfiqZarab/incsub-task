@@ -1,8 +1,8 @@
 
 .customField {
   position: relative;
-  font-size: 14px;
-  padding-top: 20px;
+  font-size: .875rem;
+  padding-top: 1.25rem;
   width: 100%;
 
   input {
@@ -12,16 +12,16 @@
     -moz-appearance: none;
     appearance: none;
     background: white;
-    padding: 12px;
+    padding: .75rem;
     border-radius: 3px;
     width: 100%;
     outline: none;
-    font-size: 14px;
+    font-size: .875rem;
   }
 
   .placeholder {
     position: absolute;
-    left: 12px;
+    left: .75rem;
     top: calc(50% + 10px);
     transform: translateY(-50%);
     color: #aaa;
@@ -42,8 +42,8 @@
         border-color: #ff647c;
       }
       + .placeholder {
-        top: 20px;
-        font-size: 12px;
+        top: 1.25rem;
+        font-size: .75rem;
         color: #646f80;
         background: white;
         &.error {
@@ -51,9 +51,9 @@
         }
       }
       ~ .errorMessage {
-        font-size: 11px;
+        font-size: .6875rem;
         color: #ff647c;
-        margin-top: 10px;
+        margin-top: .625rem;
         font-weight: 400;
       }
     }
@@ -62,8 +62,8 @@
       transition-delay: 0.1s;
 
       + .placeholder {
-        top: 20px;
-        font-size: 12px;
+        top: 1.25rem;
+        font-size: .75rem;
         color: #42433d;
         background: white;
       }
@@ -74,8 +74,8 @@
   }
 
   input + .placeholder {
-    left: 10px;
-    padding: 0 5px;
+    left: .625rem;
+    padding: 0 .3125rem;
   }
 }
 

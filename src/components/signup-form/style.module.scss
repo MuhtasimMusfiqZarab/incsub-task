@@ -20,75 +20,21 @@
   font-size: 1.5rem;
   font-weight: bold;
   font-style: normal;
-  line-height: 41px;
+  line-height: 2.5625;
   flex: none;
-  margin-bottom: 8px;
+  margin-bottom: .5rem;
   opacity: .8;
-}
-
-.formContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  margin-top: 10px;
-}
-
-.buttonGroup {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: stretch;
-}
-
-.buttonSignup {
-  height: 45px;
-  margin-top: 20px;
-  font-weight: bold;
-  font-style: normal;
-  text-transform: uppercase;
-}
-
-.buttonADFS {
-  height: 45px;
-  background: white !important;
-  border: 1px solid rgba(238, 238, 238, 0.664) !important;
-  margin-top: 20px;
-  color: rgba(238, 238, 238, 0.664) !important;
-}
-
-.horizontalLine {
-  width: 100%;
-  text-align: center;
-  border-bottom: 1px solid rgba(238, 238, 238, 0.664);
-  line-height: 0.1em;
-  margin: 20px 0px 0px;
-}
-
-.horizontalLine span {
-  background: white;
-  color: rgba(238, 238, 238, 0.664);
-  padding: 0 10px;
-}
-
-.buttonItems {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  p {
-    margin-left: 15px;
-    margin-bottom: 0px;
-  }
 }
 
 .alternateInfo {
   display: flex;
   width: 100%;
   align-self: center;
-  margin-top: 10px;
+  margin-top: .625rem;
   font-size: .8rem;
   opacity: .8;
   p {
-    margin-right: 5px;
+    margin-right: .3125rem;
   }
   a{
     text-decoration: none;
@@ -96,8 +42,6 @@
     color:#286ef9;
   }
 }
-
-
 
 .brandContainer{
   height: 100%;

@@ -8,6 +8,7 @@ import styles from './style.module.scss';
 export default function SignupForm() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  const [category, setCategory] = useState(null);
   const [password, setPassword] = useState('');
   
   const checkPassword = (password) => {
@@ -43,7 +44,7 @@ export default function SignupForm() {
               : ''
           }
         />
-        <Dropdown items={['Developer','Manager','Team Lead']} />
+        <Dropdown items={['Developer','Manager','Team Lead']} setItem={setCategory}/>
         <Input
           label='Password'
           type='password'
