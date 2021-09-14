@@ -17,13 +17,15 @@ export default function SignupForm() {
 
   const onSubmitForm = (event) => {
     event.preventDefault();
+    //handle the data input from here
     console.log("This is name",name);
     console.log("This is email",email);
+    console.log("This is category",category);
     console.log("This is password",password);
   }
 
   return (
-    <form onSubmit={onSubmitForm} className={styles.container}>
+    <form method="POST" onSubmit={onSubmitForm} className={styles.container}>
         <div className={styles.headerContainer}>
           <div className={styles.mainHeaderText}>Let's setup your account</div>
         </div>
@@ -55,7 +57,7 @@ export default function SignupForm() {
               : ''
           }
         />
-        <Button>Next</Button>
+        <Button type="submit" >Next</Button>
         <SignupForm.Agreements/>
         
         
