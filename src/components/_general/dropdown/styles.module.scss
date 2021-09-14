@@ -25,13 +25,14 @@ $radius: 0.2rem;
 
   .options_container {
     background: $clr-gray100;
-    color: $clr-gray600;
+    color: $clr-gray400;
     max-height: 0;
     width: 100%;
     opacity: 0;
     transition: all 0.4s;
     border-radius: 8px;
     overflow: hidden;
+    font-size: .875rem;
 
     //to move above the options
     order: 1;
@@ -81,13 +82,14 @@ $radius: 0.2rem;
 }
 
 .selected {
-  padding: 12px 24px;
+  padding: 12px;
   cursor: pointer;
-  color: $clr-gray600;
+  color: #aaa;
   border-radius: $radius;
   border: 1px solid $clr-gray300;
   position: relative;
   order: 0;
+  font-size: .875rem;
 
   &::after {
     content: "";
@@ -98,7 +100,7 @@ $radius: 0.2rem;
     position: absolute;
     height: 8px;
     width: 10px;
-    right: 10px;
+    right: 1rem;
     top: 50%;
     transform: translateY(-50%);
     transform-origin: center;
