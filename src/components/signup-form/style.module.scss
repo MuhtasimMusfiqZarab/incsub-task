@@ -6,6 +6,10 @@
   align-items: center;
   width: 30rem;
   margin: auto;
+
+  @media screen and (max-width: 860px) {
+       width: 20rem;
+    }
 }
 
 .headerContainer {
