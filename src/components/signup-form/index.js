@@ -24,14 +24,11 @@ export default function SignupForm() {
   return (
     <form onSubmit={onSubmitForm} className={styles.container}>
         <div className={styles.headerContainer}>
-          <div className={styles.mainHeaderText}>Sign Up</div>
-          <div className={styles.subHeaderText}>
-            Please fill up this form with your credentials
-          </div>
+          <div className={styles.mainHeaderText}>Let's setup your account</div>
         </div>
         <div className={styles.alternateInfo}>
           <p>Already have an account?</p>
-            <a href="/" >Sign In</a>
+            <a href="/">Sign In</a>
         </div>
         <Input
           label='Your name'
@@ -58,6 +55,7 @@ export default function SignupForm() {
           }
         />
         <Button>Next</Button>
+        <SignupForm.Agreements/>
         
         
     </form>
@@ -69,5 +67,11 @@ SignupForm.BrandInfo = () => (
   <div className={styles.brandContainer}>
     <p className={styles.heading}>Dummy Heading</p>
     <p className={styles.subHeading} >Lorem ipsum dolor sit amet, consectetur adipisicing elit, Nobis dolorem ab eligendi explicabo nesciunt voluptates minima</p>
+  </div>
+);
+
+SignupForm.Agreements = () => (
+  <div className={styles.agreementInfo}>
+    <p className={styles.description}>By clicking the "Next" button, you agree to create a free account and to <a href="/">Terms of service</a> and  <a href="/">Privacy policy</a></p>
   </div>
 );

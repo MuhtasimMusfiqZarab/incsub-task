@@ -11,25 +11,17 @@
   flex-direction: column;
   align-items: flex-start;
   flex: none;
+  width: 100%;
 }
 
 .mainHeaderText {
-  font-size: 30px;
+  font-size: 1.5rem;
   font-weight: bold;
   font-style: normal;
   line-height: 41px;
-  text-transform: uppercase;
-  color: #fefe;
   flex: none;
   margin-bottom: 8px;
-}
-
-.subHeaderText {
-  color: #fefe;
-  font-size: 13px;
-  line-height: 16px;
-  flex: none;
-  margin-bottom: 10px;
+  opacity: .8;
 }
 
 .formContainer {
@@ -88,40 +80,21 @@
 
 .alternateInfo {
   display: flex;
+  width: 100%;
   align-self: center;
   margin-top: 10px;
+  font-size: .8rem;
+  opacity: .8;
   p {
     margin-right: 5px;
   }
+  a{
+    text-decoration: none;
+    font-weight: bold;
+    color:#286ef9;
+  }
 }
 
-.sharedCode {
-  position: relative;
-  margin-top: 20px;
-  border-top: 1px solid rgba(238, 238, 238, 0.664);
-  height: auto;
-  width: inherit;
-  display: inherit;
-  flex-direction: inherit;
-  cursor: text;
-}
-
-.errorBox {
-  border: 1px solid rgba(rgba(238, 238, 238, 0.664), 0.25);
-  border-radius: 4px;
-  background-color: rgba(rgba(238, 238, 238, 0.664), 0.1);
-  color: rgba(255, 255, 255, 0.623);
-  font-size: 13px;
-  padding: 12px;
-  margin-top: 16px;
-  text-align: center;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
 
 
 .brandContainer{
@@ -143,4 +116,16 @@
   .subHeading{
     font-size: .9rem;
   }
+}
+
+.agreementInfo{
+  width: 100%;
+  font-size: .8rem;
+  margin-top: 2rem;
+  line-height: 1.5rem;
+  a {
+    text-decoration: none;
+    color: #286ef9;
+    font-weight: bold;
+    }
 }
