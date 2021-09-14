@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import validator from 'validator';
 import  Input  from '../_general/input-box';
+import  {Dropdown}  from '../_general/dropdown';
 import styles from './style.module.scss';
 
 export default function SignupForm() {
@@ -47,6 +48,7 @@ export default function SignupForm() {
               : ''
           }
         />
+        <Dropdown items={['Developer','Manager','Team Lead']} />
         <Input
           label='Password'
           type='password'
@@ -57,16 +59,7 @@ export default function SignupForm() {
               : ''
           }
         />
-        <Input
-          label='Confirm Password'
-          type='password'
-          setValue={setConfirmPassword}
-          error={
-            password && confirmPassword && password !== confirmPassword
-              ? 'Password did not match!'
-              : ''
-          }
-        />
+        
         
     </form>
   );
